@@ -1,0 +1,9 @@
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: maanantai-repo
+  labels:
+    argocd.argoproj.io/secret-type: repository
+stringData:
+  url: https://github.com/RedHatNordicsSA/maanantai-gitops
